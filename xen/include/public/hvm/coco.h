@@ -5,7 +5,6 @@
 
 /* Map to the sev_dom_coco_op */
 struct sev_launch_update_data {
-    unsigned int cmd;
     domid_t domid;
     uint64_t address;
     uint64_t len;
