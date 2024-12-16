@@ -9,7 +9,8 @@ struct sev_launch_update_data {
     domid_t domid;
     uint64_t address;
     uint64_t len;
-};
+}__packed;
+
 typedef struct sev_launch_update_data sev_launch_update_data_t;
 DEFINE_XEN_GUEST_HANDLE(sev_launch_update_data_t);
 
